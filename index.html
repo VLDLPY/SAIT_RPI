@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Website</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="D:\БГУИР\2 курс\РПИ\Кафе\WebApplication1\WebApplication1\wwwroot\css\styles.css">
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: gray;
+        }
+
+        .menu-item img {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu-item {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 15px;
+        }
+
+            .menu-item img {
+                display: block;
+                margin: 10px auto;
+            }
+
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: inherit; /* Добавлено */
+        }
+
+        .menu-item {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 15px;
+            background: transparent; /* Добавлено */
+        }
+
+            .menu-item img {
+                display: block;
+                margin: 10px auto;
+            }
+        /* Добавлено */
+        #menu {
+            background: transparent;
+        }
+        .menu-background{
+            background-color:inherit;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="bg-warning py-4">
+        <div class="container">
+            <h1 class="text-center text-white">Добро пожаловать в наше кафе</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Меню</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">О нас</h2>
+            <p>
+                Добро пожаловать в кафе "Город М"!
+                Мы - уютное заведение в самом сердце Минска, расположенное по адресу: ул. Якуба колоса, 35. В "Городе М" мы стремимся создать атмосферу уюта и радушия, где каждый гость чувствует себя как дома.
+                Наше кафе - это не просто место, где можно насладиться вкусной едой, это настоящая эмоция и уютная атмосфера.
+                В нашем меню  вы найдете богатый выбор блюд, приготовленных с любовью и вниманием к каждой детали. Мы используем только свежие и качественные ингредиенты, чтобы порадовать вас!
+                Наша команда профессиональных поваров и официантов всегда готова предложить вам наилучший сервис и помочь сделать ваше посещение "Города М" незабываемым. Мы рады видеть каждого гостя и делаем все возможное, чтобы вы почувствовали себя как дома.
+            </p>
+        </div>
+    </section>
+    <section id="menu"  >
+    <div class="container">
+        <h2 class="text-center mb-auto">Меню</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-product-id="1">
+                <span>Американо - $2.50</span>
+                <img src="images/product1.jpg" alt="Американо" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="2">
+                <span>Эспрессо - $3.00</span>
+                <img src="images/product2.jpg" alt="Эспрессо" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="3">
+                <span>Капучино - $4.00</span>
+                <img src="images/product3.jpg" alt="Капучино" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="4">
+                <span>Латте - $3.50</span>
+                <img src="images/product4.jpg" alt="Латте" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="5">
+                <span>Флэт Уайт - $3.50</span>
+                <img src="images/product5.jpg" alt="Флэт Уайт" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="6">
+                <span>Раф - $3.50</span>
+                <img src="images/product6.jpg" alt="Раф" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="7">
+                <span>Бургер - $3.50</span>
+                <img src="images/product7.jpg" alt="Бургер" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="8">
+                <span>Цезарь - $3.50</span>
+                <img src="images/product8.jpg" alt="Цезарь" width="200" height="150">
+            </div>
+            <div class="menu-item" data-product-id="9">
+                <span>Стейк - $3.50</span>
+                <img src="images/product9.jpg" alt="Стейк" width="200" height="150">
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <p>Адресс: Ул. Боровая 13</p>
+            <p>Телефон: 111-11-11</p>
+            <p>Почта: info@cafesite.com</p>
+        </div>
+    </section>
+    <footer class="bg-dark py-3">
+        <div class="container text-white text-center">
+            <p>&copy; 2024 Cafe Website</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
